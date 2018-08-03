@@ -1,0 +1,11 @@
+spring:
+  profiles:  dev
+  application:
+    name: microservicecloud-config-zhao-dev
+    
+-- 
+spring: 
+  profiles:  test
+  application:
+    name: microservicecloud-config-zhao-test
+   # 请保存为UTF-8格式 
