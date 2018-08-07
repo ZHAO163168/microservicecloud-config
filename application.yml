@@ -2,12 +2,14 @@ spring:
   profiles:
      active: 
      - dev
-  application:
-    name: microservicecloud-config-zhao-dev
-    
 -- 
 spring: 
-  profiles:  test
-  application:
+  profiles:  dev  #开发环境
+  applicationz:
+    name: microservicecloud-config-zhao-dev
+--
+spring:  
+  profiles: test
+  application: 
     name: microservicecloud-config-zhao-test
    # 请保存为UTF-8格式 
