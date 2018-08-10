@@ -1,3 +1,8 @@
+spring:
+ profiles:
+  active:
+   - dev
+--- 
 server:
   port: 8001
 
@@ -8,8 +13,6 @@ mybatis:
   - classpath:mybatis/mapper/**/*.xml                  #mapper 映射文件
 spring:
   profiles: dev
-  application:
-    name: microservicecloud-dept                       # 注册到eureka服务中心的名字
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource       #数据源
     driver-class-name: com.mysql.jdbc.Driver           #mysql驱动包
